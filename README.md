@@ -1,27 +1,23 @@
-**Installation**
-Clone or Download the Repository:
-  bash
-  Wrap
-  Copy
-  git clone (https://github.com/duythanhno1/coursera_copy_answser.git
-Load in Chrome:
-  Open Chrome: chrome://extensions/.
-  Enable "Developer mode" (top-right).
-  Click "Load unpacked" and select the coursera-copy folder.
-Configure Settings:
-  Click the extension icon in Chrome’s toolbar.
-  Enter your legal name and Gemini API key, then click "Save" for each.
-**Usage**
-Keyboard Shortcuts (on Coursera quiz pages):
-  **Alt + Z**: Copy the current question and options (cycles through questions).
-  **Alt + C**: Copy all questions and options.
-  **Alt + G**: Send copied content to Gemini API for answers.
-  **Alt + Q**: Auto-select answers based on the Gemini response.
-**File Structure**
-  manifest.json: Extension metadata.
-  content.js: Handles quiz interactions and shortcuts.
-  background.js: Manages answer selection.
-  popup.html/.js: Settings interface.
-  bootstrap.min.css: Styling for notifications.
-**Support**
-  For issues, open a GitHub issue or contact .....
+# Coursera Copy Extension
+
+A Chrome extension to assist with Coursera quizzes by copying questions, retrieving answers via the Gemini API, and auto-selecting responses.
+
+## Installation
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/duythanhno1/coursera_copy_answser.git
+2. **Load in browser**
+   - Open browser and navigate to: chrome://extensions/.
+   - Enable Developer mode (toggle in the top-right corner).
+   - Click Load unpacked and select the coursera-copy folder from the cloned repository.
+3. **Configure Settings**
+   - Click the extension icon in Chrome’s toolbar.
+   - Enter your legal name and Gemini API key.
+   - Click Save for each field.
+4. **Usage**
+   - Keyboard Shortcuts (on Coursera quiz pages)<br>
+        **Alt + Z**: Copy the current question and options (cycles through questions).<br>
+        **Alt + C**: Copy all questions and options on the page.<br>
+        **Alt + G**: Send copied content to the Gemini API for answers.<br>
+        **Alt + Q**: Auto-select answers based on the Gemini API response.<br>
