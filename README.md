@@ -1,5 +1,5 @@
 # Coursera Copy Extension
-
+_**On March 3, the full source code was published**_
 A Chrome extension to assist with Coursera quizzes by copying questions, retrieving answers via the Gemini API, and auto-selecting responses.
 
 ## Installation
