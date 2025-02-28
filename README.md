@@ -19,5 +19,5 @@ A Chrome extension to assist with Coursera quizzes by copying questions, retriev
    - Keyboard Shortcuts (on Coursera quiz pages)<br>
         **Alt + Z**: Copy the current question and options (cycles through questions).<br>
         **Alt + C**: Copy all questions and options on the page.<br>
-        **Alt + G**: Send copied content to the Gemini API for answers.<br>
-        **Alt + Q**: Auto-select answers based on the Gemini API response.<br>
+        **Alt + G**: Send copied content to the Gemini API for answers,Gemini API key required before proceeding.<br>
+        **Alt + Q**: Auto-select answers.<br>

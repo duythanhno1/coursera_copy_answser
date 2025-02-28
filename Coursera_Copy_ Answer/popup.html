@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Coursera Copy Settings</title>
+  <!-- Load Bootstrap CSS từ CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      width: 350px;
+      min-height: 250px;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .api-input {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container">
+    <h1 class="h3 mb-3 fw-bold text-dark">Coursera Copy Settings</h1>
+    <div class="form-group">
+      <label for="legalName" class="form-label text-dark">Enter your legal name</label>
+      <input type="text" id="legalName" placeholder="Enter your legal name" class="form-control">
+    </div>
+    <div class="d-flex gap-2 mb-3">
+      <button id="saveButton" class="btn btn-primary">Save</button>
+      <button id="editButton" class="btn btn-secondary" style="display: none;">Edit</button>
+    </div>
+    <p id="savedMessage" class="text-success small d-none">Name saved!</p>
+    <p id="editMessage" class="text-success small d-none">Name updated!</p>
+
+    <!-- Ô nhập API key Gemini -->
+    <div class="api-input">
+      <label for="geminiApiKey" class="form-label text-dark">Gemini API Key</label>
+      <input type="password" id="geminiApiKey" placeholder="Enter your Gemini API Key" class="form-control">
+      <button id="saveApiButton" class="btn btn-primary mt-2">Save API Key</button>
+      <p id="apiSavedMessage" class="text-success small d-none">API Key saved!</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

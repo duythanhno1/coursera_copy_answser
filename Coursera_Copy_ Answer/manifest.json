@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Coursera Copy",
+  "version": "1.0",
+  "description": "Copy, auto-select Coursera quiz answers, and process with Gemini API",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://*.coursera.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.coursera.org/*"],
+      "js": ["content.js"],
+      "css": ["bootstrap.min.css"], 
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*.css", "bootstrap.min.css"], 
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
